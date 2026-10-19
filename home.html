@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Aplikasi Daftar Tugas</title>
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- FullCalendar CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="navbar-title">Aplikasi Daftar Tugas dan Jadwal Belajar Mahasiswa</div>
+      <div class="navbar-menu">
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <i>🔔</i>
+      <i>👤</i>
+      <i>☰</i>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Home</h1>
+    <section class="calendar-section">
+      <h2>Calendar</h2>
+      <div id="calendar"></div>
+    </section>
+    <select id="filterCourse">
+    <option value="all">Semua Mata Kuliah</option>
+    <option value="IF103">Dasar Pemrograman Web</option>
+    <option value="IF104">Dasar Pemrograman</option>
+    <option value="IF106">Matematika</option>
+    <option value="PK2IF">Pendidikan Pancasila</option>
+    <option value="IF101">Pengantar Proyek Perangkat Lunak</option>
+    <option value="IF102">Pengantar Teknologi Informasi</option>
+    <option value="IF105">Sistem komputer</option>
+    </select>
+  </main>
+
+  <!-- Panggil file JS eksternal -->
+  <script src="calendar.js"></script>
+</body>
+</html>
